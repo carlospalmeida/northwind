@@ -1,11 +1,9 @@
 <?php
 if (isset($_GET["id"])) {
   $id = $_GET["id"];
-}
-elseif (isset($_POST["id"])) {
+} elseif (isset($_POST["id"])) {
   $id = $_POST["id"];
-}
-else {
+} else {
   $id = 0;
 }
 
@@ -17,9 +15,11 @@ $tipo = "Novo Registro";
 if ($total == 1) {
   $tipo = "Alterando Registro";
   $linha = mysqli_fetch_array($result);
-  $dados = [
-    $linha["IDProduto"],
-    $linha["NomeProduto"],
-    $linha["QuantidadePorUnidade"]
-  ];
+  $valor["IDProduto"] = $linha["IDProduto"];
+  $valor["NomeProduto"] = $linha["NomeProduto"];
+  $valor["QuantidadePorUnidade"] = $linha["QuantidadePorUnidade"];
+} else {
+  $valor["IDProduto"] = "";
+  $valor["NomeProduto"] = "";
+  $valor["QuantidadePorUnidade"] = "";
 }

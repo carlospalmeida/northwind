@@ -24,7 +24,11 @@
       </div>
 
       <div class="col-md-12">
-        <?php textBox();?>
+        <?php textBox("Nome do Produto","NomeProduto",40,true,"Informe o nome do Produto.",$valor["NomeProduto"]);?>
+      </div>
+
+      <div class="col-md-12">
+        <?php textBox("Quantidade por unidade","QuantidadePorUnidade",20,false,"Informe a quantidade de produtos por unidade",$valor["QuantidadePorUnidade"]);?>
       </div>
 
     </div>

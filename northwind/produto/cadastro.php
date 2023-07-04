@@ -18,8 +18,21 @@ if ($total == 1) {
   $valor["IDProduto"] = $linha["IDProduto"];
   $valor["NomeProduto"] = $linha["NomeProduto"];
   $valor["QuantidadePorUnidade"] = $linha["QuantidadePorUnidade"];
+  $valor["PrecoUnitario"] = $linha["PrecoUnitario"];
+  $valor["UnidadesEmEstoque"] = $linha["UnidadesEmEstoque"];
+  $valor["UnidadesEmOrdem"] = $linha["UnidadesEmOrdem"];
+  $valor["NivelDeReposicao"] = $linha["UnidadesEmOrdem"];
+  $valor["IDCategoria"] = $linha["IDCategoria"];
+
+
+
 } else {
   $valor["IDProduto"] = "";
   $valor["NomeProduto"] = "";
   $valor["QuantidadePorUnidade"] = "";
+  $valor["PrecoUnitario"] = "";
+  $valor["UnidadesEmEstoque"] = "" ;
+  $valor["UnidadesEmOrdem"] = "";
+  $valor["NivelDeReposicao"] = "";
+  $valor["IDCategoria"] = "";
 }

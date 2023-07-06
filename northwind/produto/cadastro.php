@@ -1,8 +1,8 @@
 <?php
 if (isset($_GET["id"])) {
   $id = $_GET["id"];
-} elseif (isset($_POST["id"])) {
-  $id = $_POST["id"];
+} elseif (isset($_POST["IDProduto"])) {
+  $id = $_POST["IDProduto"];
 } else {
   $id = 0;
 }

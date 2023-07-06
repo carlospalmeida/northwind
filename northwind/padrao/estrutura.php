@@ -4,7 +4,7 @@ function textBox($titulo, $coluna, $tamanho, $requerido = false, $validacao = ""
     $requerido = ($requerido == false) ? "" : "required";
     echo ('<label for="' . $coluna . '" class="form-label fw-semibold mb-1">');
     echo ('<small>');
-    echo ('<i class="bi bi-info-circle" data-bs-placement="left" data-bs-toggle="tooltip" data-bs-title="' . $validacao . '"></i>&nbsp; ' . $titulo . ' ');
+    echo ('<i class="bi bi-bookmarks-fill" data-bs-placement="left" data-bs-toggle="tooltip" data-bs-title="' . $validacao . '"></i>&nbsp; ' . $titulo . ' ');
 
     if ($requerido == "required") {
         echo ('<sup>');
@@ -28,7 +28,7 @@ function numberBox($titulo, $coluna, $max = 999999999, $decimal = 0, $requerido 
     $bloqueado = ($bloqueado == true) ? "readonly" : "";
     echo ('<label for="' . $coluna . '" class="form-label fw-semibold mb-1">');
     echo ('<small>');
-    echo ('<i class="bi bi-info-circle" data-bs-placement="left" data-bs-toggle="tooltip" data-bs-title="' . $validacao . '"></i>&nbsp; ' . $titulo . ' ');
+    echo ('<i class="bi bi-bookmarks-fill" data-bs-placement="left" data-bs-toggle="tooltip" data-bs-title="' . $validacao . '"></i>&nbsp; ' . $titulo . ' ');
 
     if ($requerido == "required") {
         echo ('<sup>');
@@ -52,7 +52,7 @@ function selectBox($titulo, $coluna, $conn, $sql, $requerido = false, $validacao
     $requerido = ($requerido == false) ? "" : "required";
     echo ('<label for="' . $coluna . '" class="form-label fw-semibold mb-1">');
     echo ('<small>');
-    echo ('<i class="bi bi-info-circle" data-bs-placement="left" data-bs-toggle="tooltip" data-bs-title="' . $validacao . '"></i>&nbsp; ' . $titulo . ' ');
+    echo ('<i class="bi bi-bookmarks-fill" data-bs-placement="left" data-bs-toggle="tooltip" data-bs-title="' . $validacao . '"></i>&nbsp; ' . $titulo . ' ');
 
     if ($requerido == "required") {
         echo ('<sup>');
@@ -76,3 +76,4 @@ function selectBox($titulo, $coluna, $conn, $sql, $requerido = false, $validacao
     echo ('</div>');
     echo ('</div>');
 }
+

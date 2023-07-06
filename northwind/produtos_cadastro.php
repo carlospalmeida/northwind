@@ -6,6 +6,7 @@ include_once("./utilitarios/upload.php");
 $pasta = "produto";
 
 include_once("./$pasta/parametro.php");
+include_once("./$pasta/salvar.php");
 include_once("./$pasta/cadastro.php");
 
 ?>

@@ -48,9 +48,9 @@
     <div class="card-footer">
       <div class="row">
         <div class="col-6">
-          <button type="button" class="btn btn-primary btn-sm">
+          <a href="produtos_cadastro.php" class="btn btn-primary btn-sm">
             <i class="bi bi-file-earmark"></i> Novo
-          </button>
+            </a>
         </div>
         <div class="col-6 text-end">
           <button type="submit" class="btn btn-warning btn-sm">
